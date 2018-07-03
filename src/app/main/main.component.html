@@ -1,0 +1,43 @@
+<div class="main-header">
+    <span>Tiderkhol Finance Enterprise</span>
+</div>
+
+<nz-row nzType="flex" nzJustify="center">
+    <nz-col nzSpan="16" class="sub-title">
+        <span>Aizdevums</span>
+    </nz-col>
+</nz-row>
+<nz-row nzType="flex" nzJustify="center">
+    <nz-col nzSpan="12">
+        <nz-slider [nzMin]="100" [nzMax]="15000" [nzStep]="100" [(ngModel)]="money" (ngModelChange)="updateTotal();"></nz-slider>
+    </nz-col>
+    <div nz-col nzSpan="4">
+        <nz-input-number [nzMin]="100" [nzMax]="15000" [nzStep]="100" [ngStyle]="{ 'marginLeft': '16px' }" [(ngModel)]="money" (ngModelChange)="updateTotal();"></nz-input-number>
+    </div>
+</nz-row>
+
+<nz-row nzType="flex" nzJustify="center">
+    <nz-col nzSpan="16" class="sub-title">
+        <span>Termiņš</span>
+    </nz-col>
+</nz-row>
+<nz-row nzType="flex" nzJustify="center">
+    <nz-col nzSpan="12">
+        <nz-slider [nzMin]="2" [nzMax]="48" [nzStep]="1" [(ngModel)]="time" (ngModelChange)="updateTotal();"></nz-slider>
+    </nz-col>
+    <div nz-col nzSpan="4">
+        <nz-input-number [nzMin]="2" [nzMax]="48" [nzStep]="1" [ngStyle]="{ 'marginLeft': '16px' }" [(ngModel)]="time" (ngModelChange)="updateTotal();"></nz-input-number>
+    </div>
+</nz-row>
+
+<nz-row nzType="flex" nzJustify="center">
+    <nz-col nzSpan="16" class="total-price-title">
+        <span>Ikmēneša maksājums : {{ total | number : '1.0-0' }} Euro</span>
+    </nz-col>
+</nz-row>
+
+<nz-row nzType="flex" nzJustify="center" style="margin-top: 20px;">
+    <nz-col nzSpan="4">
+        <button nz-button [nzSize]="large" nzType="primary" class="make-deal-button">Pieteikties</button>
+    </nz-col>
+</nz-row>
