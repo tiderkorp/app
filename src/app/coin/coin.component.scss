@@ -1,0 +1,59 @@
+.main-header {
+    background: #083358;
+    color: #fc3c3c; // margin-bottom: 50px;
+}
+
+.main-header-title {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-header-buttons-group {
+    padding: 10px 0;
+}
+.main-header-button {
+    margin: 0 5px;
+}
+
+[nz-carousel-content] {
+    text-align: center;
+    height: 180px;
+    line-height: 160px;
+    background: #fc3c3c;
+    color: #fff;
+    overflow: hidden;
+}
+
+[_nghost-c1] {
+    height: 20%;
+}
+
+.ant-btn-primary {
+    background: #083358;
+    border-color: #083358;
+}
+
+.coin-carousel-text {
+    color: white;
+    font-size: 5.5vw;
+}
+
+.coin-popover-img {
+    height: 300px;
+    width: 300px;
+}
+
+@media (max-width: 991px) {
+    .main-header-buttons-group {
+        text-align: center;
+    }
+    .coin-carousel-text {
+        font-size: 8vw;
+    }
+    .coin-popover-img {
+        height: 150px;
+        width: 150px;
+    }
+}

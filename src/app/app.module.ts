@@ -10,6 +10,8 @@ import { registerLocaleData, CommonModule } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { MainComponent } from './main/main.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CoinComponent } from './coin/coin.component';
+import { InvestmentComponent } from './investment/investment.component';
 
 registerLocaleData(en);
 
@@ -26,7 +28,9 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     // Pages
-    MainComponent
+    MainComponent,
+    CoinComponent,
+    InvestmentComponent
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

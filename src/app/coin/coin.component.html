@@ -1,0 +1,37 @@
+<div class="main-header">
+    <nz-row nzType="flex" nzAlign="middle">
+        <nz-col class="main-header-title" nzSpan="12" nzXs="24" nzSm="24" nzMd="24" nzLg="12" nzXl="8">
+            <span>Tiderkorp Finance Enterprise</span>
+        </nz-col>
+        <nz-col class="main-header-buttons-group" nzSpan="12" nzXs="24" nzSm="24" nzMd="24" nzLg="12" nzXl="16">
+            <button nz-button nzGhost class="main-header-button" [routerLink]="['/main']">Loan</button>
+            <button nz-button nzGhost class="main-header-button" [routerLink]="['/investment']">Investments</button>
+        </nz-col>
+    </nz-row>
+</div>
+
+
+<nz-carousel nzAutoPlay [nzAutoPlaySpeed]="1000" style="height: 20% !important;">
+    <div nz-carousel-content *ngFor="let index of carousel">
+        <div class="coin-carousel-text">{{index}}</div>
+    </div>
+</nz-carousel>
+
+<nz-row nzType="flex" nzJustify="center" style="margin-top: 40px;">
+    <nz-col nzSpan="8" style="text-align: center;">
+        <button nz-button [nzSize]="'large'" nzType="primary" nz-popover [(nzVisible)]="visible" nzTrigger="click" [nzContent]="contentTemplate"
+            nzPlacement="bottom">
+            Yes please
+        </button>
+        <ng-template #contentTemplate>
+            <nz-row nzType="flex" nzJustify="center">
+                <nz-col nzSpan="24">
+                    <h2>Come back later</h2>
+                </nz-col>
+                <nz-col nzSpan="24" style="text-align: center;">
+                    <a (click)='clickMe()'>Close</a>
+                </nz-col>
+            </nz-row>
+        </ng-template>
+    </nz-col>
+</nz-row>
