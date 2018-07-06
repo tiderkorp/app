@@ -1,4 +1,4 @@
-Github page (https://tiderkorp.github.io/app)[https://tiderkorp.github.io/app]
+Github page https://tiderkorp.github.io/app
 
 # Tiderkhol
 
